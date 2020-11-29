@@ -1,0 +1,13 @@
+{
+  "watch": [
+    "main.js",
+    "server",
+    "routes",
+    "models",
+    "middleware",
+    "helpers",
+    "handlers"
+  ],
+  "ext": ".js",
+  "ignore": []
+}
