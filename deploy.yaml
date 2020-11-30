@@ -13,7 +13,7 @@ spec:
         app: nodejs
     spec:
       containers:
-      - name: nodongo
+      - name: nodejs-mongodb
         image: haidarrifki/nodejs-crud-sejutacita:latest
         ports:
         - containerPort: 1337
