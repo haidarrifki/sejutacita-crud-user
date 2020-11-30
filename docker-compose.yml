@@ -32,7 +32,7 @@ services:
       - certbot-etc:/etc/letsencrypt
       - certbot-var:/var/lib/letsencrypt
     depends_on:
-      - nodejs-server
+      - nodejs
     networks:
       - app-network
 
