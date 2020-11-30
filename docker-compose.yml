@@ -57,7 +57,7 @@ volumes:
     driver: local
     driver_opts:
       type: none
-      device: /home/pethuk/docker-volumes
+      device: /home/pethuk/docker-build
       o: bind
 
 networks:
