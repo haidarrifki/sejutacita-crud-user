@@ -1,0 +1,16 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nodejs-deployment
+spec:
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        app: nodejs
+    spec:
+      containers:
+      - name: nodongo
+        image: haidarrifki/nodejs-crud-sejutacita:latest
+        ports:
+        - containerPort: 1337
