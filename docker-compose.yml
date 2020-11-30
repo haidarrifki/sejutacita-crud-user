@@ -30,7 +30,7 @@ services:
       - "80:80"
     volumes:
       - web-root:/var/www/html
-      - ./nginx-conf:/etc/nginx/conf.d
+      - ./nginx:/etc/nginx/conf.d
       - certbot-etc:/etc/letsencrypt
       - certbot-var:/var/lib/letsencrypt
     depends_on:
@@ -57,7 +57,7 @@ volumes:
     driver: local
     driver_opts:
       type: none
-      device: /home/pethuk/docker-build
+      device: /home/pethuk/docker-volumes
       o: bind
 
 networks:
