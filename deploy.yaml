@@ -10,10 +10,10 @@ spec:
   template:
     metadata:
       labels:
-        app: nodejs
+        app: nodejs-server
     spec:
       containers:
       - name: nodejs-mongodb
-        image: haidarrifki/nodejs-crud-sejutacita:latest
+        image: nodejs-server:latest
         ports:
         - containerPort: 1337
