@@ -17,6 +17,8 @@ services:
     image: nodejs-server
     container_name: nodejs-server
     restart: unless-stopped
+    depends_on:
+      - db
     networks:
       - app-network
 
