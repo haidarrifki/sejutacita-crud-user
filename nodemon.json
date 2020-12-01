@@ -6,7 +6,8 @@
     "models",
     "middleware",
     "helpers",
-    "handlers"
+    "handlers",
+    "scripts"
   ],
   "ext": ".js",
   "ignore": []

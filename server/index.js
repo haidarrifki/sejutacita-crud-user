@@ -6,6 +6,7 @@ const mongoose = require('mongoose');
 const cookieParser = require('cookie-parser');
 
 const dbUrl = process.env.MONGODB;
+const createDefaultUser = require('../scripts/createDefaultUser');
 const routes = require('../routes');
 
 const app = express();
@@ -23,6 +24,7 @@ const db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error:'));
 db.once('open', function() {
   // we're connected!
+  createDefaultUser();
   console.log('MongoDB Connected!');
 });
 

@@ -1,16 +1,28 @@
-# CRUD USERS & LOGIN WITH REFRESH TOKEN
+# CRUD Users & Login With Refresh Token
 
 This project is for assessment purpose only from https://sejutacita.id/
 
 ## Pre-requisite
 1. Node.js >= v12.x.
-2. MongoDB v3.6.3
+2. MongoDB >= v3.x
+3. docker (optional)
+4. kubernetes (optional)
+5. docker-compose (optional)
 
 ## Next steps
 - clone this repository
 - ```yarn install```
 - ```yarn dev```
 - base url `http://localhost:1337/`
+
+## Docker
+- ```docker-compose up --build```
+- ```docker pull haidarrifki/nodejs-crud-sejutacita```
+- ```kubectl create -f deploy.yaml```
+
+## Default User role Admin
+- username: johndoe
+- password: johndoe
 
 ## Postman
 - Collection
