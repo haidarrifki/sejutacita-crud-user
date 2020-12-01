@@ -1,0 +1,26 @@
+name: Node.js CI / CD
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    name: Deploy
+    runs-on: ubuntu-latest
+    steps:
+    - name: SSH Remote Command
+      uses: appleboy/ssh-action@master
+      with:
+        host: ${{ secrets.HOST }}
+        username: ${{ secrets.USER }}
+        password: ${{ secrets.PASS }}
+        script_stop: true
+        script: |
+          cd ~/sejutacita-crud-user
+          git pull
+          docker login
+          docker-compose up -d --force-recreate --no-deps nodejs
+          docker tag nodejs-sejutacita haidarrifki/nodejs-crud-sejutacita
+          docker push haidarrifki/nodejs-crud-sejutacita:latest
