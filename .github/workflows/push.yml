@@ -8,11 +8,10 @@ jobs:
     name: build and publish
     runs-on: ubuntu-latest
     steps:
-      - name: yarn install
       - uses: actions/checkout@v2
-      - uses: borales/actions-yarn@v2.0.0
-        with:
-          cmd: install # will run `yarn install` command
+      - name: Setup node
+        uses: actions/setup-node@v1
+      - run: yarn install
       - name: docker build
         uses: actions/docker/cli@master
         with:
