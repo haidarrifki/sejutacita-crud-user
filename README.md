@@ -2,6 +2,9 @@
 
 This project is for assessment purpose only from https://sejutacita.id/
 
+## Flowchart CRUD & Login
+[https://github.com/haidarrifki/sejutacita-crud-user/tree/main/flowchart](https://github.com/haidarrifki/sejutacita-crud-user/tree/main/flowchart)
+
 ## Pre-requisite
 1. Node.js >= v12.x.
 2. MongoDB >= v3.x
@@ -17,7 +20,6 @@ This project is for assessment purpose only from https://sejutacita.id/
 
 ## Docker
 - ```docker-compose up --build```
-- ```docker pull haidarrifki/nodejs-crud-sejutacita```
 - ```kubectl create -f deploy.yaml```
 
 ## Default User role Admin
