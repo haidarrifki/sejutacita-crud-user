@@ -14,8 +14,8 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    image: haidarrifki/nodejs-crud-sejutacita
-    container_name: haidarrifki/nodejs-crud-sejutacita
+    image: nodejs-sejutacita
+    container_name: nodejs-sejutacita
     restart: unless-stopped
     depends_on:
       - db
