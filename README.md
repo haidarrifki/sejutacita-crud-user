@@ -2,6 +2,9 @@
 
 This project is for assessment purpose only from https://sejutacita.id/
 
+## Live URL
+[https://sejutacita.haidarrifki.com](https://sejutacita.haidarrifki.com)
+
 ## Flowchart CRUD & Login
 [https://github.com/haidarrifki/sejutacita-crud-user/tree/main/flowchart](https://github.com/haidarrifki/sejutacita-crud-user/tree/main/flowchart)
 
@@ -27,6 +30,8 @@ This project is for assessment purpose only from https://sejutacita.id/
 - password: johndoe
 
 ## Postman
+- Environments
+[https://github.com/haidarrifki/sejutacita-crud-user/blob/main/sejutacita.postman_environment.json](https://github.com/haidarrifki/sejutacita-crud-user/blob/main/sejutacita.postman_environment.json)
 - Collection
 [https://www.getpostman.com/collections/29fe1aec17433fd43c6f](https://www.getpostman.com/collections/29fe1aec17433fd43c6f)
 - Documentation
