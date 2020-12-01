@@ -5,7 +5,7 @@ const userRoutes = require('./user');
 
 router.use(userRoutes);
 router.all('*', (req, res) => {
-  return res.status(404).json({ message: 'no route and no API found with those values.' });
+  return res.status(404).json({ message: 'Hello, World.' });
 });
 
 module.exports = router;
