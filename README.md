@@ -19,7 +19,7 @@ This project is for assessment purpose only from https://sejutacita.id/
 - base url `http://localhost:1337/`
 
 ## Docker
-- ```docker-compose up --build```
+- ```docker-compose up --build -d```
 - ```kubectl create -f deploy.yaml```
 
 ## Default User role Admin
