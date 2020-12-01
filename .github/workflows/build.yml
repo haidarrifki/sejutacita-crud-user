@@ -21,6 +21,6 @@ jobs:
           cd ~/sejutacita-crud-user
           git pull
           docker login
-          docker-compose up -d --force-recreate --no-deps nodejs
+          docker-compose up --build -d --force-recreate --no-deps nodejs
           docker tag nodejs-sejutacita haidarrifki/nodejs-crud-sejutacita:latest
           docker push haidarrifki/nodejs-crud-sejutacita:latest
